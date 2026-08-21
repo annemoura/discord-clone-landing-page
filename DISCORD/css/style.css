@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(170, 99, 241);
+
+
+
+}
+
+header {
+    padding: 20px 0;
+    background-color: #a140f6;
+    color: #f6edfb;
+
+
+
+}
+
+.container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+.hero {
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.6;
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px 0;
+    color: #0b0b0b;
+
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+  
+   
+
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+
+
+}
+
+.feature {
+    padding: 100px 0;
+
+}
+
+.content {
+    max-width: 500px;
+}
+
+.reverse .container {
+    flex-direction: row-reverse;
+
+}
+
+.feature .container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.btn {
+
+
+    gap: 10px;
+    background-color: #9b8ff8;
+    color: #fbfafc;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+
+}
+
+.download {
+
+
+    display: flex;
+    justify-content: center;
+    background-color: #8a1ef0;
+    color: #121113;
+    padding: 40px 30px;
+    border-radius: 10px;
+
+}
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    
+
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 20px 0;
+    margin: 10px;
+    color: #fbfafc;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+select {
+    width: 120px;
+    background: transparent;
+    color: rgb(14, 14, 14);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-dark {
+    background-color: #121113;
+    color: #fbfafc;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+
+    display: flex;
+    margin-top: 40px;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    nav .menu, 
+    nav .buttons {
+        display: none; /* Esconde o menu simples no mobile */
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature .container, 
+    .reverse .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-top, 
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
