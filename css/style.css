@@ -9,10 +9,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(170, 99, 241);
-
-
-
 }
+
+
+
+.aviso {
+    background-color: #fff3cd;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
 
 header {
     padding: 20px 0;
@@ -79,8 +88,8 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-  
-   
+
+
 
 }
 
@@ -151,7 +160,7 @@ nav {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    
+
 
 
 }
@@ -225,9 +234,11 @@ select {
 }
 
 @media (max-width: 768px) {
-    nav .menu, 
+
+    nav .menu,
     nav .buttons {
-        display: none; /* Esconde o menu simples no mobile */
+        display: none;
+        /* Esconde o menu simples no mobile */
     }
 
     .hero-buttons {
@@ -235,13 +246,13 @@ select {
         gap: 15px;
     }
 
-    .feature .container, 
+    .feature .container,
     .reverse .container {
         flex-direction: column;
         text-align: center;
     }
 
-    .footer-top, 
+    .footer-top,
     .footer-links {
         flex-direction: column;
         gap: 30px;
